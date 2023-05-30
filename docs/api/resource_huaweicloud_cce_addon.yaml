@@ -15,6 +15,9 @@ paths:
     get:
       tag: CCE
       operationId: Get
+    put:
+      tag: CCE
+      operationId: Update
   /api/v3/addons:
     post:
       tag: CCE

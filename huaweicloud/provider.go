@@ -618,7 +618,10 @@ func Provider() *schema.Provider {
 			"huaweicloud_antiddos_basic": antiddos.ResourceCloudNativeAntiDdos(),
 
 			"huaweicloud_aom_alarm_rule":             aom.ResourceAlarmRule(),
+			"huaweicloud_aom_event_alarm_rule":       aom.ResourceEventAlarmRule(),
 			"huaweicloud_aom_service_discovery_rule": aom.ResourceServiceDiscoveryRule(),
+			"huaweicloud_aom_alarm_action_rule":      aom.ResourceAlarmActionRule(),
+			"huaweicloud_aom_alarm_silence_rule":     aom.ResourceAlarmSilenceRule(),
 
 			"huaweicloud_rfs_stack": rfs.ResourceStack(),
 
@@ -776,8 +779,10 @@ func Provider() *schema.Provider {
 
 			"huaweicloud_dws_cluster":            dws.ResourceDwsCluster(),
 			"huaweicloud_dws_event_subscription": dws.ResourceDwsEventSubs(),
+			"huaweicloud_dws_alarm_subscription": dws.ResourceDwsAlarmSubs(),
 			"huaweicloud_dws_snapshot":           dws.ResourceDwsSnapshot(),
 			"huaweicloud_dws_snapshot_policy":    dws.ResourceDwsSnapshotPolicy(),
+			"huaweicloud_dws_ext_data_source":    dws.ResourceDwsExtDataSource(),
 
 			"huaweicloud_elb_certificate":     elb.ResourceCertificateV3(),
 			"huaweicloud_elb_l7policy":        elb.ResourceL7PolicyV3(),
@@ -927,6 +932,7 @@ func Provider() *schema.Provider {
 			"huaweicloud_obs_bucket":             obs.ResourceObsBucket(),
 			"huaweicloud_obs_bucket_acl":         obs.ResourceOBSBucketAcl(),
 			"huaweicloud_obs_bucket_object":      obs.ResourceObsBucketObject(),
+			"huaweicloud_obs_bucket_object_acl":  obs.ResourceOBSBucketObjectAcl(),
 			"huaweicloud_obs_bucket_policy":      obs.ResourceObsBucketPolicy(),
 			"huaweicloud_obs_bucket_replication": obs.ResourceObsBucketReplication(),
 
@@ -944,6 +950,7 @@ func Provider() *schema.Provider {
 			"huaweicloud_rms_policy_assignment":                  rms.ResourcePolicyAssignment(),
 			"huaweicloud_rms_resource_aggregator":                rms.ResourceAggregator(),
 			"huaweicloud_rms_resource_aggregation_authorization": rms.ResourceAggregationAuthorization(),
+			"huaweicloud_rms_resource_recorder":                  rms.ResourceRecorder(),
 
 			"huaweicloud_secmaster_incident": secmaster.ResourceIncident(),
 
